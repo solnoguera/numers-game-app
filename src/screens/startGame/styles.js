@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: "center",
     paddingVertical: 20,
-    //fontFamily: "Lato-Bold",
+    fontFamily: "LatoBold",
   },
   card: {
     justifyContent: "center",
@@ -26,14 +26,14 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     color: colors.black,
     paddingVertical: 15,
-    //fontFamily: "Lato-Regular",
+    fontFamily: "Lato",
   },
   input: {
     width: "100%",
     maxWidth: 110,
     fontSize: 25,
     textAlign: "center",
-    //fontFamily: "Lato-Regular",
+    fontFamily: "Lato",
   },
   buttonContainer: {
     marginHorizontal: 20,
@@ -50,7 +50,8 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
   },
   summaryTitle: {
-    fontWeight: "bold",
+    fontSize: 16,
     padding: 10,
+    fontFamily: "LatoLight",
   },
 });

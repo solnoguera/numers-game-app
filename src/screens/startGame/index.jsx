@@ -26,7 +26,7 @@ const StartGameScreen = ({ onStartGame }) => {
 
   const handleConfirm = () => {
     const number = parseInt(input, 10);
-    if (number === NaN || number <= 0 || number > 99) return;
+    if (isNaN(number) || number <= 0 || number > 99) return;
     setConfirmed(true);
     setSelectedNumber(number);
     setInput("");

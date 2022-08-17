@@ -4,7 +4,7 @@ import { Card } from "../../components";
 import colors from "../../constants/colors";
 import { styles } from "./styles";
 
-const GameScreen = ({ numberSelected }) => {
+const GameScreen = ({ numberSelected, onCancel }) => {
   const generateRandomBetween = (min, max, exclude) => {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -20,13 +20,22 @@ const GameScreen = ({ numberSelected }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>
-        La suposición del oponente es{" "}
+        The opponent's guess is{" "}
         <Text style={styles.number}>{currentGuess}</Text>
       </Text>
       <View style={styles.buttonContainer}>
-        <Button title="Menor" onPress={() => null} color={colors.primary} />
-        <Button title="Mayor" onPress={() => null} color={colors.primary} />
+        <Button
+          title="Is Smaller"
+          onPress={() => null}
+          color={colors.secondary}
+        />
+        <Button
+          title="Is Bigger"
+          onPress={() => null}
+          color={colors.secondary}
+        />
       </View>
+      <Button title="Back" onPress={onCancel} color={colors.primary} />
     </View>
   );
 };
