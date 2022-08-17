@@ -7,10 +7,9 @@ export const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    color: colors.text,
     textAlign: "center",
     paddingVertical: 20,
-    fontFamily: "Lato-Bold",
+    //fontFamily: "Lato-Bold",
   },
   card: {
     justifyContent: "center",
@@ -19,22 +18,22 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
   },
   inputContainer: {
-    marginHorizontal: 20,
+    margin: 10,
     alignItems: "center",
     justifyContent: "center",
   },
   inputLabel: {
-    fontSize: 14,
-    color: colors.text,
-    paddingVertical: 5,
-    fontFamily: "Lato-Regular",
+    fontSize: 16,
+    color: colors.black,
+    paddingVertical: 15,
+    //fontFamily: "Lato-Regular",
   },
   input: {
     width: "100%",
     maxWidth: 110,
     fontSize: 25,
     textAlign: "center",
-    fontFamily: "Lato-Regular",
+    //fontFamily: "Lato-Regular",
   },
   buttonContainer: {
     marginHorizontal: 20,
@@ -46,6 +45,12 @@ export const styles = StyleSheet.create({
     marginHorizontal: 20,
     alignItems: "center",
     paddingVertical: 10,
+    borderColor: "black",
+    borderWidth: 1,
+    borderRadius: 5,
   },
-  summaryText: {},
+  summaryTitle: {
+    fontWeight: "bold",
+    padding: 10,
+  },
 });

@@ -4,15 +4,13 @@ import colors from "../../constants/colors";
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.white,
     shadowColor: colors.black,
     shadowOffset: {
       width: 0,
-      height: 2,
+      height: 7,
     },
-    shadowOpacity: 0.23,
-    shadowRadius: 2.62,
-
-    elevation: 4,
+    shadowOpacity: 0.21,
+    shadowRadius: 7.68,
+    elevation: 10,
   },
 });
